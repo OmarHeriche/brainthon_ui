@@ -1,0 +1,147 @@
+
+/* start vars  */
+:root {
+    --primary: #1B6083;
+    --secondary: #F27922;
+    --sprimary: #409FCF;
+    --myblack: #05131A;
+    --primary_trans: .3s;
+}
+/* end vars  */
+/* start global rules */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Comic Neue', cursive;
+    background-color: var(--myblack);
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 768px){
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px){
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px){
+    .container {
+        width: calc(100% - 120px);
+    }
+}
+/* end global rules */
+
+/* start header  */
+.header {
+    color: white;
+    border-bottom: 1px solid var(--sprimary);
+    background-color: rgb(255 255 255 / 10%);
+}
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .logo {
+    border-style: none;
+    width: 50px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.header ul {
+    display: flex;
+}
+.header ul li a {
+    font-size: 26px;
+    font-weight: bold;
+    margin-left: 86px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: white;
+    transition: var(--primary_trans);
+}
+.header ul li a:hover {
+    color: var(--sprimary);
+}
+/* .design ul li::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f390";
+    font-weight: 900;
+    margin-right: 20px;
+    position: relative;
+    top: 1px;
+} */
+/* end header  */
+/* start hero */
+.hero {
+    padding-top: 30px;
+}
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero h1 {
+    color: var(--secondary);
+    font-size: 70px;
+    margin: 0;
+}
+.hero h1 span {
+    color: white;
+}
+.hero p {
+    color: var(--sprimary);
+    font-weight: normal;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.hero img {
+    width: 496px;
+}
+.hero ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 130px;
+}
+.hero li a {
+    font-size: 27px;
+    font-weight: bold;
+    padding: 8px 16px;
+    background-color: var(--sprimary);
+    color: var(--myblack);
+    display: flex;
+    border-radius: 10px;
+    min-width: 154px;
+    letter-spacing: 7px;
+}
+.hero ul li a::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0d8";
+    font-weight: 900;
+    margin-right: 20px;
+    position: relative;
+    top: 5px;
+    color: var(--myblack);
+    transform: rotate(90deg);
+    scale: 1.4;
+}
+/* end hero */
